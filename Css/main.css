@@ -1,0 +1,434 @@
+/* Starting of Generals */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../webfonts/Montserrat-Thin.woff') format('woff'),
+        url('../webfonts/Montserrat-VariableFont_wght.ttf') format('truetype'),
+        url('../webfonts/Montserrat-Thin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../webfonts/Poppins-Regular.woff') format('woff'),
+        url('../webfonts/Poppins-Regular.ttf') format('truetype'),
+        url('../webfonts/Poppins-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('../webfonts/Montserrat-Bold.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('../webfonts/Montserrat-ExtraBold.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Poppins-light';
+    src: url('../webfonts/Poppins-Light.ttf') format('truetype');
+
+}
+
+.montserrat {
+    font-family: 'Montserrat';
+}
+
+.montserrat-bold {
+    font-family: 'Montserrat-bold';
+}
+
+.montserrat-ExtraBold {
+    font-family: 'Montserrat-ExtraBold';
+}
+
+.poppins-light {
+    font-family: 'Poppins-light';
+}
+
+:root {
+    --main-color: #343434;
+    --main-color-rgb: 52, 52, 52;
+    --secondary-color: #FFFFFF;
+    --secondary-color-rgb: 255, 255, 255;
+    --gray: #999999;
+    --gray-rgb: 153, 153, 153;
+    --bs-body-color: #343434;
+    --bs-body-bg: rgba(230, 229, 228, 0.37);
+    scroll-padding: 4.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+.gray-color {
+    color: var(--gray);
+}
+
+.gray-bgcolor {
+    background-color: #373b3ebd;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat';
+
+}
+
+.small-p {
+    width: 80%
+}
+
+.small-font {
+    font-size: .85rem;
+}
+
+.x-small-font {
+    font-size: .65rem;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+/* End Of Generals */
+
+/*Start of Nav */
+
+.nav-underline {
+    --bs-nav-underline-gap: 1rem;
+    --bs-nav-underline-border-width: 0.125rem;
+    --bs-nav-underline-link-active-color: var(--bs-emphasis-color);
+    gap: var(--bs-nav-underline-gap);
+}
+
+
+/*End of Nav */
+
+/* Start Of Header */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.647) 0% 100%), url(../Images/bg.jpg);
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main header .header-icons div {
+    height: 35px;
+    width: 35px;
+    background-color: rgba(0, 0, 0, 0.359);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Of Header */
+
+
+/* Start Of About-me */
+#about-me .img img {
+    width: 80%;
+}
+
+#about-me #about-me-bars div {
+    height: 26px;
+}
+
+#about-me .btn1 {
+    padding: .65rem 2rem;
+    font-size: .75rem;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #212529;
+    --bs-btn-border-color: #212529;
+    --bs-btn-hover-color: #373b3e;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #373b3e;
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #4d5154;
+    --bs-btn-active-border-color: #373b3e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #212529;
+    --bs-btn-disabled-border-color: #212529;
+}
+
+#about-me .btn2 {
+    padding: .65rem 2rem;
+    font-size: .75rem;
+    --bs-btn-color: #343434;
+    --bs-btn-bg: var(--bs-btn-active-color);
+    --bs-btn-border-color: #212529;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--bs-btn-disabled-bg);
+    --bs-btn-hover-border-color: #373b3e;
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #4d5154;
+    --bs-btn-active-border-color: #373b3e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #212529;
+    --bs-btn-disabled-border-color: #212529;
+}
+
+/* End Of About-me */
+
+/* Start Of Services */
+#services #services-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #99999918;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+
+#services h2::after {
+    content: "";
+    width: 20%;
+    height: 10px;
+    background-image: url("../Images/dots.png");
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#services #card:hover #services-icon {
+    background-color: black;
+    color: white;
+}
+
+/* End Of Services */
+
+/* Start Of portfolio */
+#portfolio #portfolio-layer {
+    opacity: 0;
+    transition: all .5s;
+    top: 2%;
+    bottom: 2%;
+    left: 2%;
+    right: 2%;
+}
+
+#portfolio h2::after {
+    content: "";
+    width: 20%;
+    height: 10px;
+    background-image: url("../Images/dots.png");
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#portfolio .nav-underline .nav-link:hover {
+    border-bottom-color: transparent;
+}
+
+#portfolio #portfolio-card:hover #portfolio-layer {
+    opacity: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+#portfolio .iconz {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .iconz:hover i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 1px;
+}
+
+/* End Of portfolio */
+
+/* Start Of testimonials */
+#testimonials #testimonials-carousel .carousel-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#testimonials h2::after {
+    content: "";
+    width: 20%;
+    height: 10px;
+    background-image: url("../Images/dots.png");
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#testimonials .carousel-indicators button {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+/* End Of testimonials */
+
+/* Start Of our-team */
+#our-team .layer .icons {
+    position: absolute;
+    top: 1%;
+    bottom: 1%;
+    left: 1%;
+    right: 1%;
+    background-color: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transform: rotatey(180deg);
+    transition: all .5s;
+}
+
+#our-team h2::after {
+    content: "";
+    width: 20%;
+    height: 10px;
+    background-image: url("../Images/dots.png");
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#our-team .card:hover .icons {
+    transform: rotatey(360deg);
+    opacity: 100%;
+}
+
+#our-team .card:hover img {
+    transform: scale(1.2);
+}
+
+#our-team .card img {
+    transition: all .5s;
+}
+
+
+#our-team .layer .icons div {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+
+/* End Of our-team */
+
+/* Start Of contact-us */
+
+#contact-us #contact-us-data>div>div {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99999918;
+    position: absolute;
+    transition: all .5s;
+}
+
+#contact-us h2::after {
+    content: "";
+    width: 20%;
+    height: 10px;
+    background-image: url("../Images/dots.png");
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#contact-us #contact-us-data #data:hover .ididi {
+    color: white;
+    background-color: black;
+}
+
+#contact-us .btn1 {
+    padding: .5rem 2.25rem;
+    font-size: .75rem;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #212529;
+    --bs-btn-border-color: #212529;
+    --bs-btn-hover-color: #373b3e;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #373b3e;
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #4d5154;
+    --bs-btn-active-border-color: #373b3e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #212529;
+    --bs-btn-disabled-border-color: #212529;
+}
+
+
+.inputs-bg {
+    background-color: rgba(230, 229, 228, 0.37);
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #0050c9;
+    outline: 0;
+    box-shadow: 0 0 0 .0 rgb(255 255 255 / 25%);
+}
+
+/* End Of contact-us */
+
+footer {
+    font-size: .75rem;
+}
